@@ -1,0 +1,210 @@
+ any piece of information you have is dATA ex:text,photo,video,number
+
+DATA STRUCTURES=FASTER.BASED ON HOW WE ORGANISING THE DATA HOW 
+WE USING THE DATA is to process.
+
+BIG O NOTATION
+from low to high speed efficient
+1.n2
+2.n
+3.log(n)---log/2.BECAUSE BY DIVIDING OR NEGLECTING THE
+PARTICULAR DATA.EX:DICTIONARY. 
+4.1
+
+DEFINITON:
+
+PROCESS OF MEASURING THE SPEED AND EFFICIENCY OF
+DATA STRUCTURE ARE AN ALGORITHM IS CALLED TIME COMPLEXITY
+
+ARRAY
+
+TYPE OF OPERATIONS
+
+1.insertion--big O- 4.(1)speed____CONSTANT  TIME
+2.deletion--big O- 4.(1)speed____ f
+3.searching--big O- 2.(n)speed____LINEAR TIME
+4.traversal--scaning first to end--big O-1.(n2)___Quadratic Time.
+
+
+FROM WHICH TOPICS TO START FOR DATA STRUCTURE
+1.ARRAY
+2.STACK
+3.QUEUE
+4.LINKED LIST
+
+FROM WHICH TOPICS TO START FOR ALGORITHM OF SEARCHING.
+1.LINEAR SEARCH
+2.BINARY SEARCH
+
+FROM WHICH TOPICS TO START FOR ALGORITHM OF SORTING.
+1.BUBBLE SORT. 
+2SELECTION SORT.
+#include <stdio.h>
+#include <stdlib.h>
+
+// Structure of Node
+struct Node {
+    int data;
+    struct Node* next;
+};
+
+// Function to display list
+void display(struct Node* head) {
+    struct Node* temp = head;
+
+    if (temp == NULL) {
+        printf("List is empty\n");
+        return;
+    }
+
+    printf("Linked List: ");
+    while (temp != NULL) {
+        printf("%d -> ", temp->data);
+        temp = temp->next;
+    }
+    printf("NULL\n");
+}
+
+// Insert at beginning
+struct Node* insertBeginning(struct Node* head, int data) {
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+
+    newNode->data = data;
+    newNode->next = head;
+
+    return newNode;
+}
+
+// Insert at end
+struct Node* insertEnd(struct Node* head, int data) {
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+    newNode->data = data;
+    newNode->next = NULL;
+
+    if (head == NULL)
+        return newNode;
+
+    struct Node* temp = head;
+
+    while (temp->next != NULL)
+        temp = temp->next;
+
+    temp->next = newNode;
+    return head;
+}
+
+// Delete a node by value
+struct Node* deleteNode(struct Node* head, int value) {
+    struct Node* temp = head;
+
+    // If first node is to be deleted
+    if (temp != NULL && temp->data == value) {
+        head = temp->next;
+        free(temp);
+        return head;
+    }
+
+    // Search for node
+    while (temp->next != NULL && temp->next->data != value)
+        temp = temp->next;
+
+    // If found
+    if (temp->next != NULL) {
+        struct Node* del = temp->next;
+        temp->next = temp->next->next;
+        free(del);
+    } else {
+        printf("Value not found\n");
+    }
+
+    return head;
+}
+
+// Search element
+void search(struct Node* head, int key) {
+    struct Node* temp = head;
+    int pos = 1;
+
+    while (temp != NULL) {
+        if (temp->data == key) {
+            printf("Found at position %d\n", pos);
+            return;
+        }
+        temp = temp->next;
+        pos++;
+    }
+
+    printf("Not found\n");
+}
+
+// Update value
+void update(struct Node* head, int oldVal, int newVal) {
+    struct Node* temp = head;
+
+    while (temp != NULL) {
+        if (temp->data == oldVal) {
+            temp->data = newVal;
+            printf("Updated successfully\n");
+            return;
+        }
+        temp = temp->next;
+    }
+
+    printf("Value not found\n");
+}
+
+// Main function
+int main() {
+    struct Node* head = NULL;
+    int choice, data, value, newVal;
+
+    while (1) {
+        printf("\n1.Insert Beginning\n2.Insert End\n3.Delete\n4.Display\n5.Search\n6.Update\n7.Exit\n");
+        printf("Enter choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                printf("Enter value: ");
+                scanf("%d", &data);
+                head = insertBeginning(head, data);
+                break;
+
+            case 2:
+                printf("Enter value: ");
+                scanf("%d", &data);
+                head = insertEnd(head, data);
+                break;
+
+            case 3:
+                printf("Enter value to delete: ");
+                scanf("%d", &value);
+                head = deleteNode(head, value);
+                break;
+
+            case 4:
+                display(head);
+                break;
+
+            case 5:
+                printf("Enter value to search: ");
+                scanf("%d", &value);
+                search(head, value);
+                break;
+
+            case 6:
+                printf("Enter value to update: ");
+                scanf("%d", &value);
+                printf("Enter new value: ");
+                scanf("%d", &newVal);
+                update(head, value, newVal);
+                break;
+
+            case 7:
+                exit(0);
+
+            default:
+                printf("Invalid choice\n");
+        }
+    }
+}

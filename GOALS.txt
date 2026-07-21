@@ -1,0 +1,60 @@
+==================================================STUDY SCHEDULE FOR TOPICS TO LEARN========================================
+
+
+
+
+
+========================================EMBEDDED_AND_IOT===================================
+
+
+1.FIRST LEARN BASIC SENSORS ,PINS,CONNETIONS,PURPOSE FIRST CREATE NEW CHAT IN GPT-------------------[]
+2.EMBEDDED C PROGRAM WANT TO CREATE-------------------[✔️]
+
+3.C PROGRAMMING FOR DSA THEN WANT TO STUDY WELL-------------------[]
+4.DO PROJECT ON CONNECTING WOKWI TO AWS IOT-------------------[]
+5.UPDATE THE LINKEDIN AND RESUME>>>>4 -------------------[]
+6.PUT THE FILE ARDIUNO FILES FROM INBUILT LED TO MULTIPLE SENSORS CONNECTIONS IN ARDIUNOIDE>>>>7-------------------[]
+
+
+=================================VLSI==========================
+
+1.IDENTIFY THE ROADMAPS AND WHAT ARE ALL CLASSIFICATIONS AND PATHS OF VLSI-------------------[]
+2.DIGITAL CIRCUITS WANT STUDY FROM ADDER TO SEQUENTIAL CIRCUITS-------------------[]
+3.LEARN FSM DEEPLY-------------------[]
+4.UNDERSTAND THE TYPE OF CODING IN VHDL-------------------[]
+
+
+==============================================C_PROGRAMMING=============================================
+
+1.COMPLETE THE PROGRAM like(REMAINING QUEUE)AND LEARN THE DSA.-------------------[]
+2.THEN PUT OPERATIONS FOR EACH DSA TOPICS THEN UPLOAD>>>>5-------------------[]
+3.LEARN AGAIN FROM VARIABLES TO POINTERS-------------------[]
+4.SOLVE PROBLEMS MORE AND FIND THE IDEA FOR DIFFERENT AND IMPORTANT PROGRAMS-------------------[]
+
+
+==============================================GITHUB_AND_LINKEDIN_POST=============================================
+
+1.FIRST CHECK ALL THE REPOS README IS COMMITED FIRST.-------------------[]
+2.CREATE REPO FOR EMBEDDED C PROGRAMS AND PUSH IT.-------------------[✔️]
+3.UPDATE AND ADDED THE FILES FOR C PROGRAMMING REPO>>>>5-------------------[]
+4.CREATE THE REPO FOR ARDIUNOIDE CODES>>>>7---------------[]
+
+**********************************************LEARNINGS*******************************************************
+
+=================ADVANCED=======================================
+
+
+1.(VERY IMPORTANT)LEARN AIML IN AWS PLATFORM USING SENSORS OR ANY DATASETS TRAINING IMPLEMENTATION>>>>4-------------------[]
+2.(VERY IMPORTANT)LEARN ABOUT FPGA AND ASIC BOARDS LIKE WORKING,PURPOSE,NEEDS,USES.-------------------[]
+
+
+=============================================C++_PROGRAMMING========================================
+
+1.FIND IS THE BASIC SYNTAX AND DEFINITIONS STRUCTURE AND WHAT ARE ALL THE CONCEPTS INVOLVED IN IT.-------------------[]
+2.FIRST IDENTIFY THE SYNTAX DIFF BETWEEN  C AND C++.-------------------[]
+3.COMPARE AND DO THE PROGRAMS IN IT.-------------------[]
+4.THEN SEE THE DSA PROGRAMS AS COMPARED TO C.-------------------[]
+
+
+
+
